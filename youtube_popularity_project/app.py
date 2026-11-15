@@ -70,7 +70,7 @@ with st.sidebar:
     st.divider()
     st.caption('Source: YouTube Data API v3 · Random Forest Regression')
     if not api_key():
-        st.warning('YouTube API key not configured. Manual prediction and model evaluation still work.')
+        st.warning('Manual prediction and model evaluation still work.')
     else:
         st.success('API key configured')
     st.caption('Built with Python + Streamlit')
