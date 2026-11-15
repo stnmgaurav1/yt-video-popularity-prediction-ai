@@ -8,7 +8,7 @@ import streamlit as st
 from src.pipeline import ROOT, FEATURES, duration_seconds, predict
 from youtube_api import extract_video_id, fetch_video
 
-st.set_page_config(page_title='TubeScope | Video Intelligence', page_icon='▶️', layout='wide', initial_sidebar_state='expanded')
+st.set_page_config(page_title='youtube prediction | Video Intelligence', page_icon='▶️', layout='wide', initial_sidebar_state='expanded')
 st.markdown('''<style>
 .block-container{padding-top:1.8rem;max-width:1280px}h1,h2,h3{letter-spacing:-.035em}
 .hero{padding:24px 28px;border-radius:20px;background:linear-gradient(115deg,#1b2134,#303d61);color:white;margin-bottom:20px}
@@ -16,7 +16,7 @@ st.markdown('''<style>
 [data-testid="stMetric"]{background:rgba(125,125,125,.075);border:1px solid rgba(125,125,125,.15);border-radius:14px;padding:16px}
 .small-note{font-size:.85rem;color:#777}
 </style>''', unsafe_allow_html=True)
-st.markdown('<div class="hero"><h1>▶ TubeScope</h1><p>YouTube video analytics · ML likes estimates · Creator insights</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="hero"><h1>Youtube predictor</h1><p>YouTube video analytics · ML likes estimates · Creator insights</p></div>', unsafe_allow_html=True)
 
 @st.cache_resource(show_spinner=False)
 def load_model(path, modified):
